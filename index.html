@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/8c2d0c6396.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhromaon</title>
+    <link rel="shortcut icon" type="assets/png" href="assets/fav-icon.png"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/logo.svg" alt="Logotype" title="Logotype">
+        </div>
+        <form class="search" action="#">
+            <input type="search" placeholder="Search Your Travel Destination">
+            <button type="submit">Search<i class="fas fa-search"></i></button>
+        </form>
+        <button type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
+        <nav>
+            <div class="site-navigation">
+                <div class="site__branding">
+                    <a href="index.html">
+                        <img src="assets/logo-clear.pdf" alt="Logotype" title="Logotype">
+                    </a>
+                </div>
+                <div class="site__nav">
+                    <ul class="nav-main">
+                        <li><a href="#who-we-are">Who We Are</a></li>
+                        <li><a href="#what-we-do">What We Do</a></li>
+                        <li><a href="#travel">Travel With Us</a></li>
+                    </ul>
+                </div>
+                <!--mobile menu-->
+                <div id="responsive-nav" class="site__nav-resp">
+                    <a class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#who-we-are">Who We Are</a>
+                    <a href="#what-we-do">What We Do</a>
+                    <a href="#travel">Travel With Us</a>
+                    <span class="open-btn" onclick="openNav()">&#9776; open</span>
+                </div>
+            </div>
+            <script>
+                function openNav() {
+                  document.getElementById("responsive-nav").style.width = "250px";
+                  document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("responsive-nav").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section id="who-we-are" class="why-us">
+            <div class="why-us__article">
+                <h2>Why Choose Us</h2>
+                <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms 
+                    of pleasure of the moment, so blinded by desire, that they cannot foresee <br><br>
+                    Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
+                    so blinded by desire, that.
+                </p>
+                <form action="#places">
+                    <button>Explore Places</button>
+                </form>
+            </div>
+            <div class="why-us__gallery">
+                <img src="assets/house-water.png" alt="House at the water" title="House">
+                <img src="assets/cliff.png" alt="Cliff" title="Cliff">
+            </div>
+        </section>
+        <section id="what-we-do" class="how-to"> <!--Grid template 4 rows 3 cols-->
+            <img src="assets/Shape-1.png" alt="Step by step" title="Step by step">
+            <img src="assets/search-icon.png" alt="Search" title="search">
+            <img src="assets/check-icon.png" alt="Check" title="Check">
+            <img src="assets/thumb-icon.png" alt="Thumbs up" title="Thumbs up">
+            <h2>Search Places</h2>
+            <h2>Select Places</h2>
+            <h2>Book & Enjoy</h2>
+        </section>
+        <section id="travel" class="places">
+            <div class="travel__container">
+                <h4>Spain</h4>
+                <h4>Grand Spain Madrid</h4>
+                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                    praising pain was account  born and I account will give you a complete account of the system
+                </p>
+                <form action="#">
+                    <button>Book Now</button>
+                </form>
+            </div>
+        </section>
+        <section id="travel-exp" class="places-exp">
+            <div class="travel__container">
+                <h4>Spain</h4>
+                <h4>Grand Spain Madrid</h4>
+                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                    praising pain was account  born and I account will give you a complete account of the system
+                </p>
+                <form action="#">
+                    <button>Book Now</button>
+                </form>
+            </div>
+        </section>
+        <section class="references">
+            <h2>What Our  Tourist Say</h2>
+            <div class="references__container">
+                <img src="assets/man-on-mountain.png" alt="Man on mountain" title="Man on mountain">
+                <div class="references-article">
+                    <h4>Sam Sumon</h4>
+                    <p><span class="fas fa-quote-left"></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  
+                        But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  
+                        born and I account will give you a complete account of the system was account  born and I account will give you a nai the 
+                        complete account of the system
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer>
+         <div class="footer-container">
+             <img src="assets/logo.svg" alt="Logotype" title="Logotype">
+             <div class="socials">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-pinterest"></i>
+             </div>
+         </div>
+
+     </footer>
+</body>
+</html>
