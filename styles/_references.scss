@@ -1,3 +1,5 @@
+@use 'main';
+
 .references {
     background-image: url(../assets/background-references.png);
     background-repeat: no-repeat;
@@ -17,15 +19,13 @@
 }
 
 .references__headline {
-    padding-top: 7%;
-    padding-bottom: 3%;
     display: flex;
     justify-content: center;
 }
 
 .references-article{
     background-color: #333333;
-    padding: 2.5%;
+    padding: 3%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,23 +37,53 @@
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-  .reference__text::before {
+.reference__text::before {
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     line-height: 26px; 
     font-size: 36px;
     content: "\f10d";
     color: #5474FD;
-  }
+}
 
-  .reference__text {
+.reference__text {
       margin: 0%;
-  }
+}
 
-  .text {
+.text {
       margin: 0%;
       align-items: flex-end;
-  }
+      max-width: 581px;
+      width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .references__container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .references__container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .references__img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    .references-article {
+        max-width: 300px;
+        width: 100%;
+    }
+    .text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
 

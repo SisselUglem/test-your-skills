@@ -52,6 +52,7 @@ input {
     float: left;
     text-align: center;
     border: 2px solid white;
+    border-radius: 0%;
 
     &:hover {
         background-color: #ececec;
@@ -96,4 +97,29 @@ input {
         box-shadow: none;
     }
 
+}
+
+@media screen and (max-width: 700px) {
+    .search {
+        min-width: 400px;
+        width: 100%;
+    }
+
+    .search__button {
+        max-width: 150px;
+        min-width: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search {
+        min-width: 300px;
+        width: 100%;
+    }
+    .search__button {
+        max-width: 100px;
+        min-width: 90px;
+        width: 100%;
+    }
 }
