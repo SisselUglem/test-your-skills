@@ -17,7 +17,82 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 3em;
 }
 .header__logo {
+    max-width: 372px;
+    width: 100%;
+}
+
+.search {
+    min-width: 653px;
+    width: 100%;
+    min-height: 63px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+input {
+    width: 70%;
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #999999;
+    float: left;
+    text-align: center;
+    border: 2px solid white;
+
+    &:hover {
+        background-color: #ececec;
+        box-shadow: 3px 3px 3px rgb(119, 119, 119) inset;
+        
+    }
+
+}
+
+.search__button {
+    width: 30%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1.4px;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.scroll {
+    text-decoration: none;
+}
+
+.scroll-button {
+    background-color: transparent;
+    font-family: fonts.$main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+    flex-direction: column;
+    transition: transform .1s;
     
+    &:hover {
+        transform: scale(1.1);
+        background-color: transparent;
+    }
+
+    &:active {
+        color: rgb(175, 175, 175);
+        box-shadow: none;
+    }
+
 }

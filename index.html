@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/8c2d0c6396.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Bhromaon</title>
     <link rel="shortcut icon" type="assets/png" href="assets/fav-icon.png"/>
     <link rel="stylesheet" href="styles/index.css">
@@ -13,17 +14,21 @@
 <body>
     <header>
         <div class="header">
-            <img src="assets/logo.svg" alt="Logotype" title="Logotype">
+            <img class="animate__animated animate__fadeInDown header__logo" src="assets/logo.svg" alt="Logotype" title="Logotype">
             <form class="search" action="#">
-                <input type="search" placeholder="Search Your Travel Destination">
-                <button type="submit">Search<i class="fas fa-search"></i></button>
+                <input type="search" placeholder="Search Your Travel Destination" required>
+                <button class="search__button" type="submit">Search <i class="fas fa-search"></i></button>
             </form>
-            <button type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
+            <a class="scroll" href="#who-we-are">
+                <button class="scroll-button" type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
+            </a>
         </div>
         <nav>
             <div class="site-navigation">
                 <div class="site__branding">
+                    <a href="index.html">
                         <img class="site-logo" src="assets/logo-clear.svg" alt="Logotype" title="Logotype">
+                    </a>
                 </div>
                 <div class="site__nav">
                     <ul class="nav-main">
@@ -53,21 +58,23 @@
         </nav>
     </header>
     <main>
-        <section id="who-we-are" class="why-us">
-            <div class="why-us__article">
-                <h2>Why Choose Us</h2>
-                <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms 
-                    of pleasure of the moment, so blinded by desire, that they cannot foresee <br><br>
-                    Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
-                    so blinded by desire, that.
-                </p>
-                <form action="#places">
-                    <button>Explore Places</button>
-                </form>
-            </div>
-            <div class="why-us__gallery">
-                <img src="assets/house-water.png" alt="House at the water" title="House">
-                <img src="assets/cliff.png" alt="Cliff" title="Cliff">
+        <section class="why-us" id="who-we-are">
+            <div class="why-us__container">
+                <div class="why-us__article">
+                    <h2>Why Choose Us</h2>
+                    <p class="article__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms 
+                        of pleasure of the moment, so blinded by desire, that they cannot foresee <br><br>
+                        Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
+                        so blinded by desire, that.
+                    </p>
+                    <form action="#places">
+                        <button>Explore Places</button>
+                    </form>
+                </div>
+                <div class="why-us__gallery">
+                    <img src="assets/house-water.png" alt="House at the water" title="House">
+                    <img src="assets/cliff.png" alt="Cliff" title="Cliff">
+                </div>
             </div>
         </section>
         <section id="what-we-do" class="how-to"> <!--Grid template 4 rows 3 cols-->

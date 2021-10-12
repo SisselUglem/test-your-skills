@@ -1,7 +1,63 @@
+@use 'fonts';
+
 body {
     margin: 0%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     position: absolute;
+}
+
+
+button {
+    background-color: #5474FD;
+    font-family: fonts.$second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0%;
+    min-height: 63px;
+    min-width: 228px;
+    vertical-align: middle;
+
+
+    &:hover {
+        background-color: #455ecf;
+        
+    }
+
+    &:active {
+        box-shadow: 3px 3px 3px rgb(36, 36, 36) inset;
+        background-color: #3f56bd;
+    }
+}
+
+h2 {
+    font-family: fonts.$second-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #E8E8E8;
 }
