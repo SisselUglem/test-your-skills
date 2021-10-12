@@ -37,16 +37,21 @@ button {
     min-width: 228px;
     margin-top: 4%;
     margin-bottom: 4%;
+    transition: transform .1s;
 
 
     &:hover {
-        background-color: #455ecf;
-        
+        transform: scale(1.05);
+        background-color: #3b50b1;  
     }
 
     &:active {
         box-shadow: 3px 3px 3px rgb(36, 36, 36) inset;
-        background-color: #3f56bd;
+        background-color: #2f4191;
+    }
+
+    &:focus {
+        background-color: #2f4191;
     }
 }
 

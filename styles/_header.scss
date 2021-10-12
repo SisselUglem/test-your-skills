@@ -56,8 +56,12 @@ input {
 
     &:hover {
         background-color: #ececec;
-        box-shadow: 3px 3px 3px rgb(119, 119, 119) inset;
-        
+        box-shadow: 3px 3px 3px rgb(119, 119, 119) inset;  
+    }
+
+    &:focus {
+        background-color: #ececec;
+        box-shadow: 3px 3px 3px rgb(119, 119, 119) inset;  
     }
 
 }
@@ -73,6 +77,10 @@ input {
     justify-content: center;
     border: 2px solid white;
     margin: 0 auto;
+
+    &:hover {
+        transform: none;
+    }
 }
 
 .scroll-button {
@@ -93,6 +101,11 @@ input {
     }
 
     &:active {
+        color: rgb(175, 175, 175);
+        box-shadow: none;
+    }
+
+    &:focus {
         color: rgb(175, 175, 175);
         box-shadow: none;
     }
