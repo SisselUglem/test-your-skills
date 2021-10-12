@@ -123,6 +123,11 @@ input {
         min-width: 100px;
         width: 100%;
     }
+    /*can't get the font size smaller*/
+    .input {
+        font-size: 9px;
+        line-height: 11px;
+    }
 }
 
 @media screen and (max-width: 400px) {

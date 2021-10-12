@@ -5,6 +5,7 @@ footer {
 }
 
 .footer-container {
+    clear: both;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -13,8 +14,8 @@ footer {
 }
 .footer__logo {
     display: flex;
-    max-width: 196px;
-    width: 100%;
+    width: 196px;
+    height: auto;
     transition: transform .1s;
 
     &:hover {
