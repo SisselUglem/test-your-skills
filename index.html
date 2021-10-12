@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/8c2d0c6396.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhromaon</title>
     <link rel="shortcut icon" type="assets/png" href="assets/fav-icon.png"/>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
         <div class="header">
             <img src="assets/logo.svg" alt="Logotype" title="Logotype">
+            <form class="search" action="#">
+                <input type="search" placeholder="Search Your Travel Destination">
+                <button type="submit">Search<i class="fas fa-search"></i></button>
+            </form>
+            <button type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
         </div>
-        <form class="search" action="#">
-            <input type="search" placeholder="Search Your Travel Destination">
-            <button type="submit">Search<i class="fas fa-search"></i></button>
-        </form>
-        <button type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
         <nav>
             <div class="site-navigation">
                 <div class="site__branding">
-                    <a href="index.html">
-                        <img src="assets/logo-clear.pdf" alt="Logotype" title="Logotype">
-                    </a>
+                        <img class="site-logo" src="assets/logo-clear.svg" alt="Logotype" title="Logotype">
                 </div>
                 <div class="site__nav">
                     <ul class="nav-main">
@@ -35,22 +34,20 @@
                 </div>
                 <!--mobile menu-->
                 <div id="responsive-nav" class="site__nav-resp">
-                    <a class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#who-we-are">Who We Are</a>
                     <a href="#what-we-do">What We Do</a>
                     <a href="#travel">Travel With Us</a>
-                    <span class="open-btn" onclick="openNav()">&#9776; open</span>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
             <script>
-                function openNav() {
-                  document.getElementById("responsive-nav").style.width = "250px";
-                  document.getElementById("main").style.marginLeft = "250px";
-                }
-                
-                function closeNav() {
-                  document.getElementById("responsive-nav").style.width = "0";
-                  document.getElementById("main").style.marginLeft= "0";
+                function myFunction() {
+                    var x = document.getElementById("responsive-nav");
+                    if (x.className === "site__nav-resp") {
+                    x.className += " responsive";
+                    } else {
+                    x.className = "site__nav-resp";
+                    }
                 }
             </script>
         </nav>
