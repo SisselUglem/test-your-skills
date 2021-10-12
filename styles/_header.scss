@@ -24,6 +24,10 @@ header {
     width: 100%;
 }
 
+.animate__fadeInDown {
+    animation-duration: 2s;
+}
+
 .search {
     min-width: 653px;
     width: 100%;
@@ -67,10 +71,7 @@ input {
     letter-spacing: 1.4px;
     justify-content: center;
     border: 2px solid white;
-}
-
-.scroll {
-    text-decoration: none;
+    margin: 0 auto;
 }
 
 .scroll-button {

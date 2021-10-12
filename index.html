@@ -19,14 +19,14 @@
                 <input type="search" placeholder="Search Your Travel Destination" required>
                 <button class="search__button" type="submit">Search <i class="fas fa-search"></i></button>
             </form>
-            <a class="scroll" href="#who-we-are">
+            <a class="link-btn" href="#who-we-are">
                 <button class="scroll-button" type="submit">Scroll Down<i class="fas fa-chevron-down"></i></button>
             </a>
         </div>
         <nav>
             <div class="site-navigation">
                 <div class="site__branding">
-                    <a href="index.html">
+                    <a class="link-btn" href="index.html">
                         <img class="site-logo" src="assets/logo-clear.svg" alt="Logotype" title="Logotype">
                     </a>
                 </div>
@@ -67,47 +67,54 @@
                         Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, 
                         so blinded by desire, that.
                     </p>
-                    <form action="#places">
+                    <a class="link-btn" href="#places">
                         <button>Explore Places</button>
-                    </form>
+                    </a>
                 </div>
                 <div class="why-us__gallery">
-                    <img src="assets/house-water.png" alt="House at the water" title="House">
-                    <img src="assets/cliff.png" alt="Cliff" title="Cliff">
+                    <img class="gallery__item item-1" src="assets/house-water.png" alt="House at the water" title="House">
+                    <img class="gallery__item item-2" src="assets/cliff.png" alt="Cliff" title="Cliff">
                 </div>
             </div>
         </section>
-        <section id="what-we-do" class="how-to"> <!--Grid template 4 rows 3 cols-->
-            <img src="assets/Shape-1.png" alt="Step by step" title="Step by step">
-            <img src="assets/search-icon.png" alt="Search" title="search">
-            <img src="assets/check-icon.png" alt="Check" title="Check">
-            <img src="assets/thumb-icon.png" alt="Thumbs up" title="Thumbs up">
-            <h2>Search Places</h2>
-            <h2>Select Places</h2>
-            <h2>Book & Enjoy</h2>
+        <section class="how-to" id="step-by-step"> 
+            <div class="how-to__container"></div>
+            <div class="how-to__grid"><!--Grid template 4 rows 3 cols-->
+                <img class="grid-item-1 grid-item" src="assets/Shape-1.png" alt="Step by step" title="Step by step">
+                <img class="grid-item-2 grid-item" src="assets/search-icon.png" alt="Search" title="search">
+                <img class="grid-item-3 grid-item" src="assets/check-icon.png" alt="Check" title="Check">
+                <img class="grid-item-4 grid-item" src="assets/thumb-icon.png" alt="Thumbs up" title="Thumbs up">
+                <h2 class="grid-item-5 grid-item">Search Places</h2>
+                <h2 class="grid-item-6 grid-item">Select Places</h2>
+                <h2 class="grid-item-7 grid-item">Book & Enjoy</h2>
+            </div>
         </section>
         <section id="travel" class="places">
             <div class="travel__container">
-                <h4>Spain</h4>
-                <h4>Grand Spain Madrid</h4>
-                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
-                    praising pain was account  born and I account will give you a complete account of the system
-                </p>
-                <form action="#">
-                    <button>Book Now</button>
-                </form>
+                <div class="travel__card">
+                    <h4 class="travel__dest">Spain</h4>
+                    <h4>Grand Spain Madrid</h4>
+                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                        praising pain was account  born and I account will give you a complete account of the system
+                    </p>
+                    <form action="#">
+                        <button>Book Now</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section id="travel-exp" class="places-exp">
-            <div class="travel__container">
-                <h4>Spain</h4>
-                <h4>Grand Spain Madrid</h4>
-                <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
-                    praising pain was account  born and I account will give you a complete account of the system
-                </p>
-                <form action="#">
-                    <button>Book Now</button>
-                </form>
+            <div class="travel__container exp">
+                <div class="travel__card">
+                    <h4>Spain</h4>
+                    <h4>Grand Spain Madrid</h4>
+                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and 
+                        praising pain was account  born and I account will give you a complete account of the system
+                    </p>
+                    <form action="#">
+                        <button>Book Now</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="references">

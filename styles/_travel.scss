@@ -1,0 +1,35 @@
+.places {
+    background-image: url(../assets/background-travel-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.travel__container {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+    padding: 10% 4% 4% 4%;
+}
+
+.travel__card {
+    max-width: 503px;
+    background: #232323;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    padding: 20px
+}
+
+.travel__dest {
+    text-transform: unset;
+}
+
+.places-exp {
+    background-image: url(../assets/background-travel-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exp {
+    display: flex;
+    justify-content: flex-end;
+}
